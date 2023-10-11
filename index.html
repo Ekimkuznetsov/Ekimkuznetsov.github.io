@@ -14,6 +14,17 @@ var gform;gform||(document.addEventListener("gform_main_scripts_loaded",function
 <link rel="alternate" hreflang="en" href="https://wiseit.com.ua/en/" />
 <link rel="alternate" hreflang="x-default" href="https://wiseit.com.ua" />
 
+<!-- Widget JavaScript bundle -->
+<script src="https://cloud.google.com/ai/gen-app-builder/client?hl=en_US"></script>
+<!-- Search widget element is not visible by default -->
+<gen-search-widget
+  configId="167710ed-a159-4a89-a53f-c5e2aaee3103"
+  location="us"
+  triggerId="searchWidgetTrigger">
+</gen-search-widget>
+<!-- Element that opens the widget on click. It does not have to be an input -->
+<input placeholder="Search here" id="searchWidgetTrigger" />
+
 	<!-- This site is optimized with the Yoast SEO plugin v19.8 - https://yoast.com/wordpress/plugins/seo/ -->
 	<title>Головна - Wise IT Ukraine</title>
 	<link rel="canonical" href="https://wiseit.com.ua/" />
@@ -1318,23 +1329,7 @@ gform.initializeOnLoaded( function() { jQuery(document).trigger('gform_post_rend
   }
 </style>
 
-<!-- Widget JavaScript bundle -->
 
-<script src="https://cloud.google.com/ai/gen-app-builder/client?hl=en_US"></script>
-
- 
-
-<!-- Search widget element is not visible by default -->
-
-<gen-search-widget
-
-  configId="167710ed-a159-4a89-a53f-c5e2aaee3103"
-
-  location="us"
-
-  triggerId="searchWidgetTrigger">
-
-</gen-search-widget>
 
 <script async src="https://widget.13chats.com/assets/loader.js" data-chats-widget-id="a3b81832-3411-4137-a3d8-58bfca925982"></script>
 
@@ -1345,6 +1340,4 @@ gform.initializeOnLoaded( function() { jQuery(document).trigger('gform_post_rend
 
  
 
-<!-- Element that opens the widget on click. It does not have to be an input -->
 
-<input placeholder="Search here" id="searchWidgetTrigger" />
