@@ -1,11 +1,17 @@
-<!-- Widget JavaScript bundle -->
-<script src="https://cloud.google.com/ai/gen-app-builder/client?hl=en_US"></script>
-
-<!-- Search widget element is not visible by default -->
-<gen-search-widget
-  configId="8674d096-500e-4efb-a9b7-18e8def77c0f"
-  triggerId="searchWidgetTrigger">
-</gen-search-widget>
-
-<!-- Element that opens the widget on click. It does not have to be an input -->
-<input placeholder="Search here" id="searchWidgetTrigger" />
+<script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+<df-messenger
+  project-id="genai-test-391911"
+  agent-id="1b5660e4-25c6-417a-ae32-a8abdb68c493"
+  language-code="en">
+<df-messenger-chat-bubble
+   chat-title="wise-chat-v1">
+</df-messenger-chat-bubble>
+</df-messenger>
+<style>
+  df-messenger {
+    z-index: 999;
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+  }
+</style>
