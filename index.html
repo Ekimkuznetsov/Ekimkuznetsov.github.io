@@ -1,21 +1,12 @@
-<link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
-<script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
-<df-messenger
-  oauth-client-id="184766662372-5gld9vfst455ou1vo8iqqphip5fage9c.apps.googleusercontent.com"
-  location="us-central1"
-  project-id="mykhailo-project"
-  agent-id="73c8dede-f99c-47e7-9837-2ca597fd7072"
-  language-code="en"
-  max-query-length="-1">
-  <df-messenger-chat-bubble
-   chat-title="Osh_test_1">
-  </df-messenger-chat-bubble>
-</df-messenger>
-<style>
-  df-messenger {
-    z-index: 999;
-    position: fixed;
-    bottom: 16px;
-    right: 16px;
-  }
-</style>
+<!-- Widget JavaScript bundle -->
+<script src="https://cloud.google.com/ai/gen-app-builder/client?hl=en_US"></script>
+
+<!-- Search widget element is not visible by default -->
+<gen-search-widget
+  configId="0244f709-7df2-4fb0-920b-4cd4ac20c858"
+  location="eu"
+  triggerId="searchWidgetTrigger">
+</gen-search-widget>
+
+<!-- Element that opens the widget on click. It does not have to be an input -->
+<input placeholder="Search here" id="searchWidgetTrigger" />
